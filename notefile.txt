@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    bodyED
+    <meta name="viewport" content="width=device-width, inASitial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css.map" />
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+      $().ready(function () {
+        $.getJSON("products.json", function (data) {
+          str = "";
+          for (i=0; i <data.lenght; i++) {
+                          str=str +'<div class="card" style="width: 18rem;">\
+                                <img src="..." class="card-img-top" alt="..">\
+                                <div class="card-body">\
+                                <h5 class="card-tittle">Card tittle</h5>\
+                                <p class="card-text">some quick example </p>\
+                                <a href="#" class="btn btn-primary">Go somewhere</a>\
+                                    </div>\
+                                </div> ';
+          }
+          $('#listProd' ).html(str);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id='listProd'></div>
+  </body>
+</html>
+
+
+
+

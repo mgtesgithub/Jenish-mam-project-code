@@ -1,0 +1,103 @@
+[
+    {
+        "id":1,
+        "pname":"NewDress",
+        "pimg":"box1_image.jpg",
+        "desc":"here is the product",
+        "parent_id":0
+    },
+    {
+        "id":2,
+        "pname":"MobilePhone",
+        "desc":"here is the product",
+        "pimg":"box4_image.jpg",
+        "parent_id":0
+
+    },
+    {
+        "id":3,
+        "pname":"Mackup",
+        "pimg":"box5_image.jpg",
+        "desc":"here is the product",
+        "parent_id":0
+
+
+    },
+    {
+        "id":4,
+        "pname":"Toys",
+        "pimg":"box7_image.jpg",
+        "desc":"here is the product",
+        "parent_id":0
+
+
+    }
+    ,
+    {
+        "id":5,
+        "pname":"Mackup",
+        "pimg":"box5_image.jpg",
+        "desc":"here is the product",
+        "parent_id":0
+
+    }
+    ,
+    {
+        "id":6,
+        "pname":"NewDress",
+        "pimg":"box1_image.jpg",
+        "price": 3500,
+        "parent_id":1
+
+    }
+
+
+
+
+
+
+
+
+
+    ,
+    {
+        "id":7,
+        "pname":"MobilePhone",
+        "pimg":"box4_image.jpg",
+        "desc":"here is the product",
+        "price":3600,
+        "parent_id":2
+
+    }
+    ,
+    {
+        "id":8,
+        "pname":"Mackup",
+        "pimg":"box5_image.jpg",
+        "desc":"here is the product",
+        "price":3100,
+        "parent_id":3
+
+    }
+    ,
+    {
+        "id":9,
+        "pname":"Toys",
+        "pimg":"box7_image.jpg",
+        "desc":"here is the product",
+        "price":6500,
+        "parent_id":4
+
+    }
+    ,
+    {
+        "id":10,
+        "pname":"Mackup",
+        "pimg":"box5_image.jpg",
+        "desc":"here is the product",
+        "price":6500,
+        "parent_id":5
+
+    }
+
+] 

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Document</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $.getJSON("products.json", function (data) {
+
+                let str = "";
+                for (let i = 0; i < data.length; i++) {
+                    if (data[i].parent_id == 0) {
+
+
+
+                        str += '<div class="card  ml-4 mt-4" style="width:   13rem;">\
+                          <img src="img/' + data[i].pimg + '" class="card-img-top" alt="' + data[i].alt + '">\
+                          <div class="card-body">\
+                          <h5 class="card-title">' + data[i].pname + '</h5>\
+                          <p class="card-text">' + data[i].desc + '</p>\
+                          <a href="products.html?id='+ data[i].id + '" class="btn btn-primary">View More</a>\
+                          </div>\
+                        </div>';
+                    }
+
+                }
+                $('#listProd').html(str);
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Products Categories</h1>
+
+        <div class="row">
+
+            <div class="row">
+
+                <div id="listProd" class="row ">
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
